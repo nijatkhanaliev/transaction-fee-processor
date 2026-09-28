@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @Table(name = "payments")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Payments {
+public class PaymentRules {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

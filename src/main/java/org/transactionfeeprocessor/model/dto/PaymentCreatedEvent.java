@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.transactionfeeprocessor.model.enums.Currency;
+import org.transactionfeeprocessor.model.enums.PaymentType;
 
 import java.math.BigDecimal;
 
@@ -15,8 +16,8 @@ import java.math.BigDecimal;
 public class PaymentCreatedEvent {
     private String transactionId;
     private long userId;
+    private long paymentId;
     private BigDecimal amount;
     private Currency currency;
-    private
-
+    private PaymentType paymentType;
 }
