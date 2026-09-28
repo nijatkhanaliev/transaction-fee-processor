@@ -80,7 +80,7 @@ public class PaymentServiceImpl implements PaymentService {
            PaymentRules paymentRules = paymentRule.get();
            BigDecimal fee = paymentRules.getFee();
            final BigDecimal totalAmount = amount.add(fee);
-
+           // CREATING PROCESSED PAYMENT DTO and publish it to processed.payment.queue
 
        }else{
            throw new RuleNotFoundException(ErrorCodes.RULE_NOT_FOUND_CODE, ErrorMessages.RULE_NOT_FOUND_MESSAGE);
